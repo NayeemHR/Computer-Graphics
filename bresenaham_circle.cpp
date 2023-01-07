@@ -24,7 +24,7 @@ void plot_point(int x, int y){
 
 void bresenaham_circle(int r){
     int x=0,y=r;
-    float pk=(5.0/4.0)-r;
+    float pk=3-2*r;
     plot_point(x,y);
     int k;
 
