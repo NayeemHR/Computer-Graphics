@@ -41,7 +41,7 @@ void bresenaham_circle(int r){
     glFlush();
 }
 
-void concentric_circles(void){
+void dispaly(void){
     glClear(GL_COLOR_BUFFER_BIT);
     int radius1 = 100, radius2 = 200;
     bresenaham_circle(radius1);
@@ -59,7 +59,7 @@ int main(int argc, char **argv){
     glutInitWindowSize(640,480);
     glutCreateWindow("Bresenham_circle");
     init();
-    glutDisplayFunc(concentric_circles);
+    glutDisplayFunc(display);
     glutMainLoop();
     return 0;
 
